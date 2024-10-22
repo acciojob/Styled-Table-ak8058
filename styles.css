@@ -1,1 +1,35 @@
 /* your code */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.scorboard {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 20px 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.scorboard th,
+.scorboard td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.scorboard th {
+  background-color: #2c5282;
+  color: white;
+  font-weight: bold;
+}
+.scorboard tbody tr:nth-child(even) {
+    background-color: #e0e0e0;
+}
+.scorboard td{
+    color: #333;
+    font-size: 16px;
+}
+.scorboard tbody tr:last-child td{
+    border-bottom: none;
+}
